@@ -145,14 +145,20 @@
     max-width: 320px;
   }
   .hero-avatar {
-    width: 72px; height: 72px;
-    border-radius: 50%;
-    background: linear-gradient(135deg, var(--purple-mid), var(--purple-dark));
-    display: flex; align-items: center; justify-content: center;
-    font-family: var(--serif);
-    font-size: 1.5rem;
-    color: #fff;
-    margin-bottom: 1.25rem;
+    width: 160px;
+    margin: 0 auto 1.25rem;
+    border-radius: 8px;
+    background: transparent;
+    display: block;
+  }
+
+  /* Avatar image adjustments: larger, not circular, centered */
+  .hero-avatar img, .hero-photo {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+    object-fit: cover;
+    display: block;
   }
   .hero-card-name { font-family: var(--serif); font-size: 1.2rem; color: var(--white); margin-bottom: 0.25rem; }
   .hero-card-sub { font-size: 0.78rem; color: var(--gray-mid); margin-bottom: 1.5rem; }
